@@ -1,5 +1,5 @@
-hello! This Message From myTablet!
+<!--#include virtical="/src/partical/header.html"--!>
 
-<?php
-echo "hogeeeeee"
-?>
+<h1>index.htmlの内容</h1>
+
+<!--#include virtical="/src/partical/footer.html"--!>
