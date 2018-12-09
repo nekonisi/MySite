@@ -1,4 +1,4 @@
-<script src="header.js"></script>
+<script src="/src/js/header.js"></script>
 <h1>index.htmlの内容</h1>
 
 <!--#include virtical="/src/partical/footer.html"--!>

@@ -1,4 +1,1 @@
-document.write('
-	<div>header</div>
-	<div>header2</div>
-	');
+document.write(' <div>header</div> <div>header2</div> ');
