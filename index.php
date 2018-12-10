@@ -16,18 +16,18 @@
 		<h1>Study Page <small>By nekonisi</small></h1>
 
 		<!-- ナビゲーションバーここから-->
-
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="navbarEexample7">
-					<ul class="nav navbar-nav">
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse" id="navbarEexample7">
+			<ul class="nav navbar-nav">
 						<li class="active"><a href="/">About</a></li>
 						<li><a href="/php/">PHPに関して</a></li>
 						<li><a href="/designPattern/">デザインパターンに関して</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+			</ul>
+			<p class="navbar-text navbar-right">ようこそ <a href="#" class="navbar-link">ゲスト</a> さん。</p>
+		</div>
+	</div>
+</nav>
 		<!-- ナビゲーションバーここまで-->
 	</header>
 	<body>
