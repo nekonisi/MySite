@@ -32,8 +32,8 @@
 
 		<div class="collapse navbar-collapse" id="navbarEexample7">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">about</a></li>
-				<li><a href="/php/">PHP</a></li>
+				<li><a href="/">about</a></li>
+				<li class="active"><a href="/php/">PHP</a></li>
 				<li><a href="/DesignPattern/">DesignPattern</a></li>
 			</ul>
 		</div>
