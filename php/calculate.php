@@ -43,16 +43,27 @@
 		<!-- ナビゲーションバーここまで-->
 	</header>
 	<body>
+<div class="contaigner">
+<h2>コード</h2>
 <code>
-$price = 12300;
+$price = 12300;<br>
 $total = $price * 1.05;
 </code>
+</div>
+<!--PHPのコード-->
 <?php
 $price = 12300;
 $total = $price * 1.05;
 ?>
+<!--PHPのコード-->
+
+<!--出力結果-->
+<div class="contaigner">
+<h2>出力結果</h2>
 	<p><?php echo '$price = '.$price; ?></p>
 	<p><?php echo '$total = '.$total; ?></p>
+</div>
+<!--出力結果-->
 	</body>
 	<footer class="text-center container-fluid bFoot" style="margin:10vh;">
 		<div class="container">
