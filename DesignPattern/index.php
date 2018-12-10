@@ -42,20 +42,6 @@
 		<!-- ナビゲーションバーここまで-->
 	</header>
 	<body>
-
-		<!-- hoverで動かしたかったのでCSSべた書き -->
-<style type="text/css">
-#GithubLogo{
-	transition: 0.8s;
-		width: 10vw;
-}
-#GithubLogo:hover{
-	width: 12vw;
-}
-</style>
-		<!-- hoverで動かしたかったのでCSSべた書き -->
-
-		<div class="container text-center"><a href="https://github.com/nekonisi"><img id="GithubLogo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></img></a></div>
 	</body>
 	<footer class="text-center container-fluid bFoot" style="margin:10vh;">
 		<div class="container">
