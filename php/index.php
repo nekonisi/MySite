@@ -42,7 +42,7 @@
 		<!-- ナビゲーションバーここまで-->
 	</header>
 	<body>
-
+<a href="calculate.php">計算</a>
 	</body>
 	<footer class="text-center container-fluid bFoot" style="margin:10vh;">
 		<div class="container">
