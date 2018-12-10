@@ -47,8 +47,8 @@
 $price = 12300;
 $total = $price * 1.05;
 </code>
-	<p>$price = <?php echo $price; ?></p>
-	<p>$total = <?php echo $total; ?></p>
+	<p><?php echo "$price = ".$price; ?></p>
+	<p><?php echo "$total = ".$total; ?></p>
 	</body>
 	<footer class="text-center container-fluid bFoot" style="margin:10vh;">
 		<div class="container">
