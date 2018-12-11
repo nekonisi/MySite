@@ -1,5 +1,5 @@
 <?php
-class fileReader
+class FileReader
 {
 	private $fileContent = '';
 	private $filePointer;
