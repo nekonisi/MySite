@@ -1,32 +1,20 @@
 <?php
-
-class HeaderCreater
+class fileReader
 {
-	/* ヘッダ文字列を格納する。*/
-	private $header = '';
+	private $fileContent = '';
 	private $filePointer;
 
-	public function getHeader(){
-		echo "IN getHeader";
-		echo $this->$header;
-		echo "IN getHeader()";
+	public function outputFile(){
+		echo $this->fileContent;
 	}
 
 	/* コンストラクタ */
-	function __construct(){
-		echo "IN __construct()";
-		$this->$filePointer = @fopen("header.html",'r');
-		while(!feof($this->$filePointer)){
-			$this->$header .=fgets($filePointer);
+	public function __construct($filePath){
+		$this->filePointer = fopen($filePath, "r");
+		while(!feof($this->filePointer)){
+			$this->fileContent .=fgets($this->filePointer);
 		}
-		fclose($filePointer);
-		echo "OUT __construct()";
+		fclose($this->filePointer);
 	}
 }
-
-echo "test";
-//echo "create Instance";
-//$instance = new HeaderCreater();
-//echo "execute getHeader";
-//$instance->getHeader();
 ?>
