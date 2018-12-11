@@ -1,4 +1,5 @@
 <?php
+
 class HeaderCreater
 {
 	/* ヘッダ文字列を格納する。*/
@@ -6,19 +7,19 @@ class HeaderCreater
 	private $filePointer;
 
 	public function getHeader(){
-		echo "IN getHeader"
+		echo "IN getHeader";
 		echo $this->$header;
-		echo "IN getHeader()"
+		echo "IN getHeader()";
 	}
 
 	/* コンストラクタ */
 	function __construct(){
-		echo "IN __construct()"
+		echo "IN __construct()";
 		$this->$filePointer = @fopen("header.html",r) or echo "ヘッダの読み込みに失敗しました。";
 		while(!feof($this->$filePointer)){
-			$header .=fgets($filePointer)
-		echo "OUT __construct()"
+			$header .=fgets($filePointer);
 		}
+		echo "OUT __construct()";
 	}
 }
 
