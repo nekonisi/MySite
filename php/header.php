@@ -15,9 +15,9 @@ class HeaderCreater
 	/* コンストラクタ */
 	function __construct(){
 		echo "IN __construct()";
-		$this->$filePointer = @fopen("header.html",'r') or echo "ヘッダの読み込みに失敗しました。";
+		$this->$filePointer = @fopen("header.html",'r');
 		while(!feof($this->$filePointer)){
-			$header .=fgets($filePointer);
+			$this->$header .=fgets($filePointer);
 		}
 		fclose($filePointer);
 		echo "OUT __construct()";
