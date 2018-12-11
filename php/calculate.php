@@ -90,6 +90,7 @@ $total = $price * 1.05;
 	</div>
 </div>
 <!--出力結果-->
+</div>
 	</body>
 	<footer class="text-center container-fluid bFoot" style="margin:10vh;">
 		<div class="container">
