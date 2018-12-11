@@ -7,9 +7,9 @@ class HeaderCreater
 	private $filePointer;
 
 	public function getHeader(){
-		//echo "IN getHeader";
-		//echo $this->$header;
-		//echo "IN getHeader()";
+		echo "IN getHeader";
+		echo $this->$header;
+		echo "IN getHeader()";
 	}
 
 	/* コンストラクタ */
@@ -24,8 +24,9 @@ class HeaderCreater
 	}
 }
 
-echo "create Instance";
-$instance = new HeaderCreater();
-echo "execute getHeader";
-$instance->getHeader();
+echo "test";
+//echo "create Instance";
+//$instance = new HeaderCreater();
+//echo "execute getHeader";
+//$instance->getHeader();
 ?>
