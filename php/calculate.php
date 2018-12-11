@@ -4,7 +4,6 @@
 $header->outputFile();?>
 
 <div class="contaigner">
-
 <!--概要説明-->
 <div class="panel panel-default">
 	<div class="panel-heading">

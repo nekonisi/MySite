@@ -5,5 +5,5 @@ $header->outputFile();?>
 
 <a href="calculate.php">計算</a>
 
-<?php $footer = new FileReader(FileReader::$header);
+<?php $footer = new FileReader(FileReader::$footer);
 $footer->outputFile();?>
