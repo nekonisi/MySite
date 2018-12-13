@@ -2,6 +2,18 @@
 $header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 
+<div class="panel panel-default">
+	<div class="panel-heading">
+		概要
+	</div>
+	<div class="panel-body">
+		PHPの実行環境。<br>
+		書いたコードを掲載していく。<br>
+		PHPでデザパタの勉強もする。
+	</div>
+</div>
+<!--概要説明-->
+
 <!-- hoverで動かしたかったのでCSSべた書き -->
 <style type="text/css">
 #GithubLogo{

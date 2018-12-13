@@ -6,8 +6,7 @@ $header->outputFile();?>
 <div class="panel panel-default">
 <div class="panel-heading">
 <h1 class="panel-title">
-<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-内容　　<small>Components</small>
+内容　　<small>Contents</small>
 </h1>
 </div>
 <div class="list-group">
