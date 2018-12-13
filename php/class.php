@@ -1,5 +1,4 @@
-
-<?php include(__DIR__.'/../include/FileReader.php')
+<?php include(__DIR__.'/../include/FileReader.php');
 $header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 
@@ -23,35 +22,95 @@ $header->outputFile();?>
 	<div class="panel-body">
 <code>
 <pre>
-<?php
-
 // Class
 class MyClass
 {
 
 	// property
-	private String $name;
-	private int $age;
+	private $name;
+	private $age;
 
 	// static property
 	public static $introName='My Name is ';
 	public static $introAge='My age is ';
 
 	//setter
-	public set_name(String val){
-	$this->name=val;
+	public function setName($val){
+		$this->name=$val;
 	}
-	public set_age(int val){
-	$this->age=val;
+	public function setAge($val){
+		$this->age=$val;
 	}
 
 	//getter
-	public get_name(String val){
-	$this->name=val;
+	public function getName($val){
+		return $this->name=$val;
 	}
 
-	public get_age(int val){
-	$this->age=val;
+	public function getAge($val){
+		return $this->age=$val;
+	}
+
+	// method
+	public function introduce(){
+		echo &#039;&lt;p&gt;&#039;.MyClass::$introName.$this-&gt;name.&#039;&lt;/p&gt;&lt;br&gt;&#039;;
+		echo &#039;&lt;p&gt;&#039;.MyClass::$introAge.(String)$this-&gt;age.&#039;&lt;/p&gt;&lt;br&gt;&#039;;
+		   }
+
+	}
+
+	/* コンストラクタ */
+	public function __construct($name,$age){
+		$this->name=$name;
+		$this->age=$age;
+	}
+}
+
+$class = new MyClass("nekonisi",26);
+$class->introduce();
+$class->setName("hoge");
+$class->setAge(27);
+$class->introduce();
+</pre>
+</code>
+	</div>
+</div>
+
+<!--出力結果-->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		出力結果
+	</div>
+	<div class="panel-body">
+<!--PHPの実コード-->
+<?php
+// Class
+class MyClass
+{
+
+	// property
+	private $name;
+	private $age;
+
+	// static property
+	public static $introName='My Name is ';
+	public static $introAge='My age is ';
+
+	//setter
+	public function setName($val){
+		$this->name=$val;
+	}
+	public function setAge($val){
+		$this->age=$val;
+	}
+
+	//getter
+	public function getName($val){
+		return $this->name=$val;
+	}
+
+	public function getAge($val){
+		return $this->age=$val;
 	}
 
 	// method
@@ -61,37 +120,19 @@ class MyClass
 	}
 
 	/* コンストラクタ */
-	public function __construct(String name, int age){
-		$this->name=name;
-		$this->age=age;
+	public function __construct($name,$age){
+		$this->name=$name;
+		$this->age=$age;
 	}
 }
 
-MyClass class = new MyClass("nekonisi",26);
+$class = new MyClass("nekonisi",26);
 $class->introduce();
-
-?>
-</pre>
-</code>
-	</div>
-</div>
-<!--サンプルコード-->
-
-<!--PHPの実コード-->
-<?php
-$price = 12300;
-$total = $price * 1.05;
+$class->setName("hoge");
+$class->setAge(27);
+$class->introduce();
 ?>
 <!--PHPのコード-->
-
-<!--出力結果-->
-<div class="panel panel-default">
-	<div class="panel-heading">
-		出力結果
-	</div>
-	<div class="panel-body">
-	<p><?php echo '$price = '.$price; ?></p>
-	<p><?php echo '$total = '.$total; ?></p>
 	</div>
 </div>
 <!--出力結果-->

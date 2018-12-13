@@ -1,4 +1,4 @@
-<?php include(__DIR__.'/../include/FileReader.php')
+<?php include(__DIR__.'/../include/FileReader.php');
 $header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 

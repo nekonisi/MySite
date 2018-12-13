@@ -11,8 +11,9 @@ $header->outputFile();?>
 </h1>
 </div>
 <div class="list-group">
-<a class="list-group-item" href="calculate.php"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 変数の宣言</a>
-<a class="list-group-item" href="class.php"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>クラス</a>
+<a class="list-group-item" href="calculate.php"> 変数の宣言</a>
+<a class="list-group-item" href="class.php">クラス</a>
+<a class="list-group-item" href="FileReader.php">ファイル読み込み(自前クラス)</a>
 </div>
 </div>
 
