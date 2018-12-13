@@ -1,6 +1,5 @@
-
-<?php include('FileReader.php') ?>
-<?php $header = new FileReader(FileReader::$header);
+<?php include(__DIR__.'/../include/FileReader.php')
+$header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 
 <div class="contaigner">
