@@ -1,6 +1,6 @@
-<?php include('FileReader.php') ?>
+<?php include('/php/FileReader.php')
 
-<?php $header = new FileReader(FileReader::$header);
+$header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 
 <a href="calculate.php">計算</a>

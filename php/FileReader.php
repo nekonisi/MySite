@@ -1,10 +1,12 @@
 <?php
 class FileReader
 {
+	// ファイルのコンテンツ
 	private $fileContent = '';
+
+	// オープンするファイルのポインタ
 	private $filePointer;
 
-	/* 定数扱い */
 	public static $header="templates/header.html";
 	public static $footer="templates/footer.html";
 
@@ -14,7 +16,11 @@ class FileReader
 
 	/* コンストラクタ */
 	public function __construct($filePath){
+
+		// 読み込み専用でファイルをオープン
 		$this->filePointer = fopen($filePath, "r");
+
+		// 内部変数にに書き込んでいく
 		while(!feof($this->filePointer)){
 			$this->fileContent .=fgets($this->filePointer);
 		}
