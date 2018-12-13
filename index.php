@@ -1,4 +1,4 @@
-<?php include(__DIR__.'/include/FileReader.php')
+<?php include(__DIR__.'/include/FileReader.php');
 $header = new FileReader(FileReader::$header);
 $header->outputFile();?>
 
@@ -15,7 +15,7 @@ $header->outputFile();?>
 		<!-- hoverで動かしたかったのでCSSべた書き -->
 		<div class="container text-center"><a href="https://github.com/nekonisi"><img id="GithubLogo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></img></a></div>
 
-<?php include('/php/FileReader.php')
+<?php
 $footer = new FileReader(FileReader::$footer);
 $footer->outputFile();?>
 
